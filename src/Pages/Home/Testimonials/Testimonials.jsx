@@ -8,7 +8,6 @@ import { useEffect, useState } from 'react';
 import { Rating } from '@smastrom/react-rating';
 import '@smastrom/react-rating/style.css';
 import SectionTitle from '../../../Components/SectionTItle/SectionTitle';
- 
 
 const Testimonials = () => {
     const [reviews, setReviews] = useState([]);
@@ -27,7 +26,7 @@ const Testimonials = () => {
                 heading="Testimonials"
             />
 
-            <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+            <Swiper navigation modules={[Navigation]} className="mySwiper">
                 {reviews.map(review => (
                     <SwiperSlide key={review._id}>
                         <div className="flex flex-col items-center mx-24 my-16">
