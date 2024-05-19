@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosSecure = axios.create({
-    baseURL: '../../public/menu.json'
+    baseURL: 'http://localhost:5000'
 })
 const useAxiosSecure = () => {
 
